@@ -1,4 +1,5 @@
-﻿@{
+﻿@using System.Web.Hosting
+@{
     Layout = null;
 }
 
@@ -18,7 +19,7 @@
         <div class="container">
             <h3>Yarmolovich Alexander CV</h3>
             <p>
-                <a class="btn btn-primary btn-lg" href="@Path.Combine(Server.MapPath("~/CV"), "cv.docx")" role="button">Download .docx</a>
+                <a class="btn btn-primary btn-lg" href="@Url.Action("DownloadCV", "Home")" role="button">Download .docx</a>
             </p>
         </div>
     </header>

@@ -8,5 +8,10 @@ namespace yarmolovichalex_cv.Controllers
         {
             return View();
         }
+
+        public FileResult DownloadCV()
+        {
+            return File(@"/CV/cv.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "cv.docx");
+        }
 	}
 }
