@@ -8,11 +8,5 @@ namespace yarmolovichalex_cv.Controllers
         {
             return View();
         }
-
-        public FileResult DownloadCV()
-        {
-            string path = Server.MapPath("~//CV/cv.docx");
-            return File(path, "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "cv.docx");
-        }
 	}
 }
